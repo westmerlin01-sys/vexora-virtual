@@ -3,38 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vexora Virtual</title>
-<meta name="description" content="Vexora Virtual provides professional virtual assistant services including administrative and social media support for growing businesses.">
+<title>Vexora Virtual | Professional Virtual Assistant Services</title>
+
+<meta name="description" content="Vexora Virtual provides professional virtual assistant services including administrative support, social media management, and business operations assistance.">
 
 <style>
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff;
   color: #1f2933;
+  background: #ffffff;
 }
 
-section {
-  padding: 70px 20px;
-  max-width: 1100px;
-  margin: auto;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+header img {
+  height: 50px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #1f2933;
+  font-weight: bold;
 }
 
 .hero {
   text-align: center;
   background: linear-gradient(135deg, #0f172a, #0b3c5d);
   color: #ffffff;
-  padding: 100px 20px;
+  padding: 110px 20px;
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 44px;
   margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 18px;
-  max-width: 700px;
+  max-width: 720px;
   margin: auto;
   line-height: 1.6;
 }
@@ -42,7 +56,7 @@ section {
 .cta-btn {
   display: inline-block;
   margin-top: 30px;
-  padding: 14px 32px;
+  padding: 14px 34px;
   background-color: #00b4d8;
   color: #ffffff;
   text-decoration: none;
@@ -50,16 +64,21 @@ section {
   border-radius: 6px;
 }
 
-.cta-btn:hover {
-  background-color: #0096c7;
-  transition: 0.3s ease;
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
 }
 
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 30px;
+h2 {
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
 }
 
 .card {
@@ -68,23 +87,17 @@ section {
   border-radius: 10px;
 }
 
-.pricing {
+.about {
   text-align: center;
-  background-color: #f8fafc;
-}
-
-.price-box {
-  display: inline-block;
-  border: 2px solid #0b3c5d;
-  padding: 40px;
-  border-radius: 12px;
-  max-width: 400px;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.7;
 }
 
 .footer {
-  text-align: center;
-  background-color: #0f172a;
+  background: #0f172a;
   color: #ffffff;
+  text-align: center;
   padding: 40px 20px;
 }
 </style>
@@ -92,62 +105,71 @@ section {
 
 <body>
 
+<header>
+  <img src="logo.png" alt="Vexora Virtual Logo">
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
 <div class="hero">
   <h1>Professional Virtual Assistant Services</h1>
   <p>
-    Vexora Virtual provides reliable administrative and social media support
-    to help businesses operate efficiently and scale with confidence.
+    Vexora Virtual helps businesses streamline operations by providing reliable
+    administrative, social media, and business support — delivered remotely with
+    precision and professionalism.
   </p>
   <a href="#contact" class="cta-btn">Book a Free Consultation</a>
 </div>
 
-<section>
-  <h2 style="text-align:center;">Our Services</h2>
-  <div class="features">
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
     <div class="card">
       <h3>Administrative Support</h3>
-      <p>Email management, scheduling, data entry, documentation, and follow-ups.</p>
+      <p>
+        Email and calendar management, data entry, document formatting,
+        client coordination, and day-to-day administrative assistance.
+      </p>
     </div>
+
     <div class="card">
       <h3>Social Media Support</h3>
-      <p>Instagram & Facebook management, content scheduling, captions, engagement.</p>
+      <p>
+        Instagram and Facebook management, content scheduling,
+        caption assistance, inbox handling, and engagement support.
+      </p>
     </div>
+
     <div class="card">
-      <h3>Business Support</h3>
-      <p>CRM updates, research, reporting, and basic content editing.</p>
+      <h3>Business Operations Support</h3>
+      <p>
+        CRM updates, online research, reporting, task tracking,
+        and basic content editing to keep your business organized.
+      </p>
     </div>
   </div>
 </section>
 
-<section>
-  <h2 style="text-align:center;">Why Vexora Virtual</h2>
-  <div class="features">
-    <div class="card">Dedicated Virtual Assistant</div>
-    <div class="card">US Time-Zone Friendly</div>
-    <div class="card">Secure & Confidential</div>
-    <div class="card">Clear Communication</div>
-  </div>
-</section>
-
-<section class="pricing">
-  <h2>Simple Pricing</h2>
-  <div class="price-box">
-    <h3>Monthly Plan</h3>
-    <h2>$450</h2>
+<section id="about">
+  <h2>About Vexora Virtual</h2>
+  <div class="about">
     <p>
-      Dedicated virtual assistant<br>
-      Fixed monthly workload<br>
-      Pre-payment basis<br>
-      No hidden fees
+      Vexora Virtual was founded to help entrepreneurs, agencies, and growing
+      businesses reclaim valuable time by delegating essential operational tasks.
+      We believe in structured workflows, clear communication, and long-term
+      professional partnerships.
     </p>
-    <a href="#contact" class="cta-btn">Get Started</a>
   </div>
 </section>
 
 <section id="contact">
-  <h2 style="text-align:center;">Contact Us</h2>
+  <h2>Contact Us</h2>
   <p style="text-align:center;">
-    Email: <strong>support@vexoravirtual.com</strong>
+    Email us to get started: <br>
+    <strong>support@vexoravirtual.com</strong>
   </p>
 </section>
 
