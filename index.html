@@ -275,9 +275,15 @@ footer {
 <section id="contact">
   <h2>Contact Us</h2>
   <div class="contact-box">
-    📞 <strong>(+91) 999-007-0997</strong><br>
-    📧 <strong>westmerlin01@gmail.com</strong>
-  </div>
+  📞 <strong><a href="tel:+919990070997">(+91) 999-007-0997</a></strong><br>
+  💬 <strong>
+    <a href="https://wa.me/919990070997" target="_blank">
+      Chat with us on WhatsApp
+    </a>
+  </strong><br>
+  📧 <strong><a href="mailto:support@vexoravirtual.com">support@vexoravirtual.com</a></strong><br>
+  📧 <strong><a href="mailto:westmerlin01@gmail.com">westmerlin01@gmail.com</a></strong>
+</div>
 </section>
 
 <!-- MODAL -->
@@ -285,6 +291,7 @@ footer {
   <div class="modal-content">
     <h3>Get a Custom Quote</h3>
     <form action="https://formspree.io/f/xqeepble" method="POST">
+      <input type="hidden" name="_replyto" value="support@vexoravirtual.com">
       <input type="hidden" name="service" id="selectedService">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
