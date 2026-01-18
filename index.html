@@ -167,11 +167,25 @@ h2 {
 
 <section id="contact">
   <h2>Contact Us</h2>
-  <p style="text-align:center;">
-    Email us to get started: <br>
-    <strong>support@vexoravirtual.com</strong>
-  </p>
+
+  <form action="https://formspree.io/f/xqeepble" method="POST" style="max-width:500px;margin:auto;">
+    
+    <input type="text" name="name" placeholder="Your Name" required
+      style="width:100%;padding:12px;margin-bottom:15px;">
+    
+    <input type="email" name="email" placeholder="Your Email" required
+      style="width:100%;padding:12px;margin-bottom:15px;">
+    
+    <textarea name="message" placeholder="How can we help you?" required
+      style="width:100%;padding:12px;margin-bottom:15px;height:120px;"></textarea>
+    
+    <button type="submit" class="cta-btn" style="width:100%;">
+      Send Message
+    </button>
+  </form>
+
 </section>
+
 
 <div class="footer">
   <p>© 2026 Vexora Virtual. All rights reserved.</p>
