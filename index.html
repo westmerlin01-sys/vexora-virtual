@@ -250,6 +250,17 @@ footer {
     <p style="margin-top:15px;cursor:pointer;" onclick="closeModal()">Close</p>
   </div>
 </div>
+  <!-- SUCCESS MODAL -->
+<div class="modal" id="successModal">
+  <div class="modal-content">
+    <h3>Request Sent Successfully</h3>
+    <p>
+      Thank you for reaching out.<br>
+      Your request has been received and we will contact you shortly.
+    </p>
+    <button class="btn primary-btn" onclick="closeSuccess()">Close</button>
+  </div>
+</div>
 
 <footer>
   <p>© 2026 Vexora Virtual</p>
@@ -257,13 +268,39 @@ footer {
 </footer>
 
 <script>
-function openModal(service='General Inquiry') {
+function openModal(service = 'General Inquiry') {
   document.getElementById('selectedService').value = service;
   document.getElementById('quoteModal').style.display = 'flex';
 }
+
 function closeModal() {
   document.getElementById('quoteModal').style.display = 'none';
 }
+
+function closeSuccess() {
+  document.getElementById('successModal').style.display = 'none';
+}
+
+/* Handle Formspree submission */
+const form = document.querySelector('#quoteModal form');
+
+form.addEventListener('submit', async function (e) {
+  e.preventDefault();
+
+  const response = await fetch(form.action, {
+    method: form.method,
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  });
+
+  if (response.ok) {
+    closeModal();
+    document.getElementById('successModal').style.display = 'flex';
+    form.reset();
+  } else {
+    alert('Something went wrong. Please try again.');
+  }
+});
 </script>
 
 </body>
