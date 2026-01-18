@@ -32,10 +32,33 @@ header {
   justify-content:space-between;
   align-items:center;
   padding:22px 40px;
+  @media (max-width: 600px) {
+  header {
+    padding: 16px 20px;
+  }
+}
   background:#fff;
   border-bottom:1px solid #eceaf3;
 }
-header img { height:90px; }
+/* Logo sizing – responsive */
+header img {
+  height: 95px;   /* Desktop */
+  width: auto;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  header img {
+    height: 80px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  header img {
+    height: 60px;
+  }
+}
 
 nav a {
   margin-left:25px;
