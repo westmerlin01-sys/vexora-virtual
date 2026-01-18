@@ -6,223 +6,176 @@
 
 <title>Vexora Virtual | Smart Support for Serious Growth</title>
 
-<meta name="description" content="Vexora Virtual provides intelligent virtual assistant services for administration, social media, and business operations. Smart support for serious growth.">
+<meta name="description" content="Vexora Virtual provides intelligent virtual assistant services. Get a custom quote for admin, social media, and business support.">
 <meta name="robots" content="index, follow">
-
-<meta property="og:title" content="Vexora Virtual – Smart Support for Serious Growth">
-<meta property="og:description" content="Professional virtual assistant services designed to help businesses scale efficiently.">
-<meta property="og:type" content="website">
 
 <style>
 :root {
-  --primary: #6a1b9a;
-  --accent: #b14cff;
-  --dark: #14002b;
-  --light: #f7f5fb;
+  --primary:#6a1b9a;
+  --accent:#b14cff;
+  --dark:#14002b;
+  --light:#f7f5fb;
 }
 
-* {
-  box-sizing: border-box;
-  transition: all 0.3s ease;
-}
+* { box-sizing:border-box; transition:all .3s ease; }
 
 body {
-  margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: var(--light);
-  color: #1f2933;
+  margin:0;
+  font-family:'Segoe UI',Arial,sans-serif;
+  background:var(--light);
+  color:#1f2933;
 }
 
 /* HEADER */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 22px 40px;
-  background: #ffffff;
-  border-bottom: 1px solid #eceaf3;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:22px 40px;
+  background:#fff;
+  border-bottom:1px solid #eceaf3;
 }
-
-header img {
-  height: 90px;
-  width: auto;
-}
+header img { height:90px; }
 
 nav a {
-  margin-left: 25px;
-  text-decoration: none;
-  font-weight: 600;
-  color: #2b2b2b;
+  margin-left:25px;
+  text-decoration:none;
+  font-weight:600;
+  color:#2b2b2b;
 }
-
-nav a:hover {
-  color: var(--accent);
-}
+nav a:hover { color:var(--accent); }
 
 /* HERO */
 .hero {
-  text-align: center;
-  padding: 120px 20px;
-  background: radial-gradient(circle at top, #7b2cbf, #2a0a4a);
-  color: #ffffff;
+  text-align:center;
+  padding:120px 20px;
+  background:radial-gradient(circle at top,#7b2cbf,#2a0a4a);
+  color:#fff;
 }
-
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 16px;
-}
-
+.hero h1 { font-size:48px; }
 .hero .tagline {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 22px;
-  color: #e9d8ff;
+  font-size:22px;
+  font-weight:600;
+  color:#e9d8ff;
+  margin:15px 0;
 }
-
 .hero p {
-  max-width: 760px;
-  margin: auto;
-  font-size: 18px;
-  line-height: 1.7;
+  max-width:760px;
+  margin:auto;
+  font-size:18px;
+  line-height:1.7;
 }
-
 .hero-cta {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
+  display:flex;
+  justify-content:center;
+  margin-top:40px;
 }
 
-.cta-btn {
-  padding: 16px 42px;
-  background: linear-gradient(135deg, var(--accent), #e040fb);
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 40px;
-  box-shadow: 0 15px 35px rgba(177,76,255,0.45);
+/* BUTTONS */
+.btn {
+  padding:14px 38px;
+  border-radius:40px;
+  font-weight:600;
+  text-decoration:none;
+  cursor:pointer;
+  border:none;
 }
-
-.cta-btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 25px 55px rgba(177,76,255,0.6);
+.primary-btn {
+  background:linear-gradient(135deg,var(--accent),#e040fb);
+  color:#fff;
+  box-shadow:0 15px 35px rgba(177,76,255,.45);
+}
+.primary-btn:hover {
+  transform:translateY(-4px);
+  box-shadow:0 25px 55px rgba(177,76,255,.6);
 }
 
 /* SECTIONS */
 section {
-  padding: 90px 20px;
-  max-width: 1100px;
-  margin: auto;
-  border-bottom: 1px solid #eee;
+  padding:90px 20px;
+  max-width:1100px;
+  margin:auto;
 }
-
 h2 {
-  text-align: center;
-  margin-bottom: 60px;
-  font-size: 34px;
+  text-align:center;
+  font-size:34px;
+  margin-bottom:60px;
 }
 
 /* SERVICES */
 .services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 35px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:35px;
 }
-
 .card {
-  background: #ffffff;
-  padding: 35px;
-  border-radius: 16px;
-  border: 1px solid #eee;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+  background:#fff;
+  padding:35px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.05);
 }
-
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 30px 70px rgba(106,27,154,0.2);
+  transform:translateY(-10px);
+  box-shadow:0 30px 70px rgba(106,27,154,.2);
 }
-
-.card h3 {
-  color: var(--primary);
-}
+.card h3 { color:var(--primary); }
+.card button { margin-top:20px; }
 
 /* ABOUT */
 .about {
-  text-align: center;
-  max-width: 820px;
-  margin: auto;
-  font-size: 17px;
-  line-height: 1.8;
+  text-align:center;
+  max-width:820px;
+  margin:auto;
+  font-size:17px;
+  line-height:1.8;
 }
 
 /* CONTACT */
-#contact {
-  background: linear-gradient(180deg, #f5effc, #ffffff);
-}
-
 .contact-box {
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 40px;
+  text-align:center;
+  font-size:18px;
+  margin-bottom:40px;
 }
 
-form {
-  max-width: 520px;
-  margin: auto;
+/* MODAL */
+.modal {
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  justify-content:center;
+  align-items:center;
+  z-index:999;
 }
+.modal-content {
+  background:#fff;
+  padding:35px;
+  width:90%;
+  max-width:450px;
+  border-radius:14px;
+  text-align:center;
+}
+.modal-content h3 { color:var(--primary); }
 
-input, textarea {
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 16px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+input, textarea, select {
+  width:100%;
+  padding:12px;
+  margin:12px 0;
+  border-radius:8px;
+  border:1px solid #ccc;
 }
 
 /* FOOTER */
 footer {
-  background: var(--dark);
-  color: #ffffff;
-  text-align: center;
-  padding: 60px 20px;
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+  padding:60px 20px;
 }
-
 .footer-tagline {
-  margin-top: 25px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #d6b3ff;
-}
-
-/* SCROLL REVEAL */
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  nav a {
-    margin-left: 12px;
-    font-size: 15px;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-  }
-
-  .hero .tagline {
-    font-size: 18px;
-  }
+  margin-top:20px;
+  font-size:20px;
+  color:#d6b3ff;
 }
 </style>
 </head>
@@ -230,9 +183,7 @@ footer {
 <body>
 
 <header>
-  <a href="index.html">
-    <img src="logo.png" alt="Vexora Virtual Logo">
-  </a>
+  <img src="logo.png" alt="Vexora Virtual Logo">
   <nav>
     <a href="#services">Services</a>
     <a href="#about">About</a>
@@ -240,20 +191,80 @@ footer {
   </nav>
 </header>
 
-<div class="hero reveal">
+<div class="hero">
   <h1>Intelligent Virtual Assistance</h1>
   <div class="tagline">Smart Support for Serious Growth</div>
-  <p>
-    Vexora Virtual helps founders and growing teams streamline operations
-    through reliable administrative, social media, and business support —
-    delivered remotely with precision.
-  </p>
+  <p>Custom virtual assistant solutions designed around your business needs.</p>
   <div class="hero-cta">
-    <a href="#contact" class="cta-btn">Book a Free Consultation</a>
+    <button class="btn primary-btn" onclick="openModal()">Get a Quote</button>
   </div>
 </div>
 
-<section id="services" class="reveal">
+<section id="services">
   <h2>Our Services</h2>
   <div class="services">
-    <d
+    <div class="card">
+      <h3>Administrative Support</h3>
+      <p>Email, scheduling, documentation, data entry, and client coordination.</p>
+      <button class="btn primary-btn" onclick="openModal('Administrative Support')">Get a Quote</button>
+    </div>
+    <div class="card">
+      <h3>Social Media Support</h3>
+      <p>Content scheduling, captions, inbox handling, and engagement support.</p>
+      <button class="btn primary-btn" onclick="openModal('Social Media Support')">Get a Quote</button>
+    </div>
+    <div class="card">
+      <h3>Business Operations</h3>
+      <p>CRM updates, reporting, research, and workflow coordination.</p>
+      <button class="btn primary-btn" onclick="openModal('Business Operations')">Get a Quote</button>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Vexora Virtual</h2>
+  <div class="about">
+    <p>We work as your digital right hand—handling execution so you can focus on growth.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-box">
+    📞 <strong>+91 9990070997</strong><br>
+    📧 <strong>westmerlin01@gmail.com</strong>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="quoteModal">
+  <div class="modal-content">
+    <h3>Get a Custom Quote</h3>
+    <form action="https://formspree.io/f/xqeepble" method="POST">
+      <input type="hidden" name="service" id="selectedService">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Describe your requirements" required></textarea>
+      <button class="btn primary-btn" type="submit">Submit Request</button>
+    </form>
+    <p style="margin-top:15px;cursor:pointer;" onclick="closeModal()">Close</p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Vexora Virtual</p>
+  <div class="footer-tagline">Smart Support for Serious Growth</div>
+</footer>
+
+<script>
+function openModal(service='General Inquiry') {
+  document.getElementById('selectedService').value = service;
+  document.getElementById('quoteModal').style.display = 'flex';
+}
+function closeModal() {
+  document.getElementById('quoteModal').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
